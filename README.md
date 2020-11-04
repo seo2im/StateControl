@@ -49,3 +49,27 @@ const Child = React.memo(() => {
 	);	
 })
 ```
+
+## Real Work ContextAPI
+
+For controlling state in child component, set function is sent together. look below.
+
+```javascript
+const stateContext = React.createContext({});
+const setStateContext = React.createContext(() => {});
+
+function Parent() {
+	const [ state, setState ] = useState({value : 0})
+	return (
+		<div>
+			<setStateContext.Provider value={setState}>
+				<stateContext.Provider vale={state}>
+					<Child />
+				</stateContext.Provider>
+			</setStateContext.Provider>
+		</div>
+	)
+}
+```
+
+if you use `setStateContext.Consumer`'s paramter function, state is changed, it apply Provider.
