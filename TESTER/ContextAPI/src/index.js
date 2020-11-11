@@ -36,7 +36,6 @@ function Child() {
 						</div>
 					)}
 				</stateContext.Consumer>
-				
 			)}
 		</setStateContext.Consumer>
 	);

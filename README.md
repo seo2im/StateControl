@@ -3,7 +3,6 @@
 > OBJECT
 
 1. Knownledge what is **ContextAPI**
-2. Knownledge what is **redux**
 </br></br>
 
 ## What is ContextAPI
@@ -73,3 +72,7 @@ function Parent() {
 ```
 
 if you use `setStateContext.Consumer`'s paramter function, state is changed, it apply Provider.
+
+## Other Style ([#ContextAPIStyle2]())
+
+ContextAPI can be used with `useContext`. `useContext` get value in provider. It's more intuitive, but have possiblity of unnecessary re-rendering.
