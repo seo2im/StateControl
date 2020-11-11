@@ -7,11 +7,11 @@
 
 ## What is ContextAPI
 
-![contextAPI1]()
+![contextAPI1](https://raw.githubusercontent.com/seo2im/StateControl/master/readmeImage/contextAPI1.png)
 
 Assume control same state different branch component. It is implemented if root have state, and send it each branch for props. But brach is bigger, state more, it is harder and messy. **ContextAPI** is solution.
 
-![contextAPI2]()
+![contextAPI2](https://raw.githubusercontent.com/seo2im/StateControl/master/readmeImage/contextAPI2.png)
 
 ContextAPI save global state and provide. It's one of Flux pattern. ref [this(facebook)](https://facebook.github.io/flux/docs/in-depth-overview/)</br></br>ContextAPI consist **Provider** & **Consumer**. Provider send state in parent components, consumer get state in child component. Consumer find Provider throgh going up to parent component.
 
@@ -49,7 +49,7 @@ const Child = React.memo(() => {
 })
 ```
 
-## Real Work ContextAPI
+## Real Work ContextAPI ([ContextAPI](https://github.com/seo2im/StateControl/tree/master/TESTER/ContextAPI))
 
 For controlling state in child component, set function is sent together. look below.
 
@@ -73,6 +73,6 @@ function Parent() {
 
 if you use `setStateContext.Consumer`'s paramter function, state is changed, it apply Provider.
 
-## Other Style ([#ContextAPIStyle2]())
+## Other Style ([#ContextAPIStyle2](https://github.com/seo2im/StateControl/tree/master/TESTER/ContextAPIStyle2))
 
 ContextAPI can be used with `useContext`. `useContext` get value in provider. It's more intuitive, but have possiblity of unnecessary re-rendering.
